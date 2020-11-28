@@ -1,0 +1,40 @@
+
+/*MAIN PAGE STYLING*/
+
+.containerMainPage {
+    display: grid;
+    grid: "containerText"1fr
+    "containerImage"1fr/
+    1fr;
+}
+
+
+.containerImage, .containerText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#containerContent{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: 100px auto;
+}
+
+.containerImage img{
+    width: 400px;
+}
+
+#background_1{
+    background-color: #CEB684;
+    width: 200px;
+    height: 100px;
+}
+
+/*#containerRowPicture {*/
+/*    width: 60%;*/
+/*    margin: auto;*/
+
+/*}*/

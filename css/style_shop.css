@@ -1,0 +1,27 @@
+#containerContent{
+    margin-bottom: 50px;
+}
+
+#containerContent h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+#containerItems{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#perItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+    flex: 0 0 30%;
+}
+
+.item_name{
+    font-size: 35px;
+}

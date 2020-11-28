@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER STYLING*/
+header {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#containerHeaderItems{
+    display: flex;
+}
+
+#containerHeaderLeft, #containerHeaderRight {
+    width: 100%;
+    border-top: #CEB684 solid 5px;
+    border-bottom: #CEB684 solid 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header_item {
+    display: flex;
+    align-items: center;
+}
+
+h1, h2, h3, h4 {
+    font-weight: lighter;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.logo img{
+    width: 300px;
+}

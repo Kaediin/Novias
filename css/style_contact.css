@@ -1,0 +1,16 @@
+
+#containerContent{
+    width: min-content;
+    margin: 150px auto;
+    border: 20px solid #CEB684;
+    display: flex;
+    padding: 50px;
+}
+.containerItem{
+    display: flex;
+    padding: 10px 0 10px 0;
+}
+.item_image{
+    width: 50px;
+    margin-right: 20px;
+}

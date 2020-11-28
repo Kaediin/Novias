@@ -1,0 +1,30 @@
+#containerCenter {
+    display: grid;
+    width: 50%;
+    margin: 100px auto;
+    grid:
+            "containerLeftText containerRightImage"1fr/
+1fr 1fr;
+    border: 30px solid #CEB684;
+    padding: 50px;
+
+}
+
+/*#containerBarTop {*/
+/*    width: 55%;*/
+/*    height: 50px;*/
+/*    background: #CEB684;*/
+/*}*/
+
+#containerLeftText {
+    padding: 20px;
+}
+#containerRightImage{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#containerRightImage img {
+    width: 80%;
+
+}

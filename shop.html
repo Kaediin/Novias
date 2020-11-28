@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+    <link type="text/css" href="css/style_shop.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        })
+    </script>
+</head>
+<body>
+<div id="header"></div>
+<div id="containerContent">
+    <h1>BEADS</h1>
+    <div id="containerItems">
+        <div id="perItem" style="display: none">
+            <img class="item_image" src="" alt="">
+            <p class="item_name"></p>
+            <p class="item_price"></p>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+</body>
+</html>
+<script>
+    $.getJSON("res/json/beads.json", function (data) {
+        for (let i = 0; i < data.length; i++){
+            const item = document.getElementById('perItem');
+            const clone = item.cloneNode(true);
+
+            clone.style.display = "flex"
+
+            clone.querySelector('.item_image').src = `res/images/shop/${data[i]['image_name']}`
+            clone.querySelector('.item_image').alt = "Foto"
+            clone.querySelector('.item_name').innerHTML = data[i]['name']
+            clone.querySelector('.item_price').innerHTML = data[i]['price']
+
+            document.getElementById('containerItems').appendChild(clone)
+        }
+    })
+</script>
